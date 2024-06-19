@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const imageURL = (image) => {
   if (image) {
-    return `http://localhost:4000/${image}`;
+    return `https://super-coach-backend.onrender.com/${image}`;
   }
 };
 
