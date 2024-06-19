@@ -20,13 +20,13 @@ app.use(cors());
 app.use(express.json());
 const PORT = process.env.PORT || 3000;
 
-const corsOptions = {
-  origin: "http://localhost:5000", // Allow only this origin
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true, // Enable cookies and HTTP authentication
-  optionsSuccessStatus: 204,
-};
-app.use(cors(corsOptions));
+// const corsOptions = {
+//   origin: "http://localhost:5000", // Allow only this origin
+//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+//   credentials: true, // Enable cookies and HTTP authentication
+//   optionsSuccessStatus: 204,
+// };
+app.use(cors());
 
 connectDB();
 const __filename = fileURLToPath(import.meta.url);
